@@ -1,2 +1,6 @@
 <!-- testing for putting poster on same page, link is to imdb page -->
-<%= @movie_list %>
+
+<% @movie_list.each do |movie| %>
+
+	<p> <%= movie %></p>
+<% end %>
