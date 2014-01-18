@@ -1,6 +1,14 @@
 <!-- testing for putting poster on same page, link is to imdb page -->
 
-<% @movie_list.each do |movie| %>
+<% @movies.each do |movie| %>
 
 	<p> <%= movie %></p>
+<% end %>
+
+<% @movies.each do |movie| %>
+	<div id="movie_info" style="margin: 20px, width: 50px">
+	<h2> <%= movie['Title'] %></h2> </br>
+		<img src= <%= movie['Poster'] %> /> </br>
+	<p> <%= movie['Plot'] %> </p>
+	</div>
 <% end %>
